@@ -1,0 +1,18 @@
+version: "3"
+
+requires:
+  vars:
+    - FILE
+
+tasks:
+  run:
+    desc: Poženi datoteko skozi intepreter in ostani v interpreterju
+    cmd: rlwrap -r sml '{{.FILE}}'
+
+  interpret:
+    desc: Poženi datoteko skozi intepreter
+    cmd: sml < '{{.FILE}}'
+
+  test:
+    desc: Poženi teste
+    cmd: sml '{{.FILE}}' < '{{dir .FILE}}/{{trimSuffix ".sml" (base .FILE) }}-tests.sml'
