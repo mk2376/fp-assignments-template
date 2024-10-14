@@ -1,6 +1,8 @@
 # fp-assignments
 
-[VSCode esxtension](https://open-vsx.org/vscode/item?itemName=azdavis.millet)
+[VSCodium](https://open-vsx.org/vscode/item?itemName=azdavis.millet)/[VSCode](https://marketplace.visualstudio.com/items?itemName=azdavis.millet) for intellisense and syntax highlighting.
+
+Only requires you to install Devbox ([instructions](https://www.jetify.com/docs/devbox/installing_devbox/)).
 
 Enter:
 
